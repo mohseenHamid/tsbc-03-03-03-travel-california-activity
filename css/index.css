@@ -1,0 +1,330 @@
+/* Global styles ============= */
+:root {
+	--yellow: #ffe000;
+	--hover-yellow: #fcbd20;
+	--dark-text: #313131;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: "Muli", "Helvetica", "Arial", "sans-serif";
+}
+
+a {
+	color: var(--yellow);
+	transition: all 0.35s;
+}
+a:hover,
+a:focus {
+	color: var(--hover-yellow);
+	text-decoration: none;
+}
+
+hr {
+	max-width: 100px;
+	margin: 25px auto 0;
+	border-width: 1px;
+	border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+	border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
+	font-weight: 200;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
+	font-weight: 500;
+}
+
+section {
+	padding: 100px 0;
+}
+
+section h2 {
+	font-size: 68px;
+}
+
+/*---s1 styles---*/
+.jumbotron {
+	background: url(../images/bg-img.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/* navbar */
+#mainNav {
+	margin: auto 5em;
+}
+
+.nav-brand {
+	font-family: "Pacifico";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text),
+		0 0 3px var(--dark-text), 0 0 3px var(--dark-text), 0 0 3px var(--dark-text);
+}
+
+.navbar-container {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 2em;
+	letter-spacing: 0.035em;
+
+	font-family: "Catamaran";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+}
+.nav-item {
+	color: #ffffff;
+}
+
+/* hero */
+.hero col {
+	display: flex;
+	justify-content: center;
+	padding: 0 5em;
+}
+
+#masthead {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5em 0 12em;
+	gap: 2em;
+	color: #ffffff;
+}
+
+#masthead h2 span {
+	font-weight: bold;
+}
+
+.btn-container a {
+	font-family: "Catamaran";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	background: none;
+	border: 0.1em solid #ffffff;
+	border-radius: 100px;
+	padding: 0.5em 2em;
+	color: #ffffff;
+	opacity: 0.6;
+}
+.btn-container a:hover {
+	color: var(--hover-yellow);
+	border: 0.1em solid var(--hover-yellow);
+	transition: all 0.35s;
+	opacity: 1;
+}
+
+.demo-screen {
+	padding: 0 10em 0 5em;
+}
+
+.demo-screen img {
+	min-width: 75%;
+	max-width: 90%;
+}
+
+/*---s2 styles---*/
+.download {
+	background: var(--hover-yellow);
+	text-align: center;
+}
+
+.download p {
+	font-size: 26px;
+}
+
+.dl-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.dl-col header {
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+}
+
+/*---s3 styles---*/
+.testimonials-container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2em;
+}
+
+.t-cards {
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+}
+.t-card {
+	border: none;
+}
+.t-card img {
+	width: 70%;
+	border-radius: 50%;
+	box-shadow: 0 5px 5px var(--hover-yellow);
+}
+
+/*---s4 styles---*/
+.signup-section {
+	background: linear-gradient(
+			360deg,
+			black 0.1%,
+			rgba(26, 26, 26, 0.886317) 10.58%,
+			rgba(26, 26, 26, 0.886317) 10.58%,
+			rgba(26, 26, 26, 0.886317) 10.58%,
+			rgba(26, 26, 26, 0.65) 25.45%,
+			rgba(26, 26, 26, 0.3) 100%
+		),
+		url(../images/SF.svg);
+	background-size: cover;
+	font-family: "Catamaran";
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3em;
+	color: white;
+	min-height: 65vh;
+}
+.signup-section form {
+	width: 100%;
+}
+.subscribe-form {
+	display: flex;
+	justify-content: center;
+	gap: 0.5em;
+	width: 100%;
+}
+.subscribe-form input {
+	width: 40%;
+	padding: 1.5em;
+}
+.subscribe-form button {
+	border-radius: 100px;
+	padding: 0 2em;
+	font-weight: 500;
+}
+
+/*---s5 styles---*/
+.bg-black {
+	background: black;
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3em;
+}
+
+.c-cards {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	text-align: center;
+	width: 75%;
+}
+
+.c-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 1em 3em;
+}
+
+.c-card a {
+	color: black;
+}
+
+#c-card-3 {
+	padding: 1em 0;
+}
+
+.c-icons {
+	display: flex;
+	flex-grow: 1;
+}
+
+.c-icons div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0.5em;
+	border: 1px solid #313131;
+	border-radius: 50%;
+	background: var(--dark-text);
+	color: grey;
+	min-width: 4em;
+	min-height: 4em;
+}
+
+/*---s6 styles---*/
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--dark-text);
+	color: grey;
+	min-height: 10vh;
+	font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
+	font-weight: 500;
+	font-size: 18px;
+}
